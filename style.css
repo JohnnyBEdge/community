@@ -1,0 +1,35 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.topNav{
+    width: 100vw;
+    background-color: green;
+    display: inline-block;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    float: left;
+}
+.mainNav{
+    float: right;
+    margin: 10px 20px;
+}
+.mainNav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+
+.welcomeImage{
+    background-color: blue;
+    margin: 0 auto;
+    width: 75vw;
+}
+.welcomeImage img{
+    width:75%;
+    padding: 5px;
+}
