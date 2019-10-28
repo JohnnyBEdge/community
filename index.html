@@ -4,32 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
     <title>Utah Hazara Association</title>
 </head>
 <body>
     <header>
-        <div class="topNav">
-            <div class="logo">
+        <div class="container">
+            <div id="logo">
                 <img src="images/logo.png" alt="UHA Logo">
             </div>
-
-            <div class="mainNav">
-                <a class="item" href="#">Our Plan</a>
-                <a class="item" href="#">Who We Are</a>
-                <a class="item" href="#">Learn More</a>
-                <button class="btn btn-danger">Donate Now</button>
-            </div>
-        </div>
-
-        <div class="welcomeImage">
-            <img src="images/sample1.jpg" alt="" id="welcome">
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#">Our Plan</a></li>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><button class="btn btn-danger">Donate Now</button></li>
+                </ul>
+            </nav>
         </div>
     </header>
+<br>
+    <section id="welcomeImg">
+        <div class="container">
+            <img src="images/sample1.jpg" alt="" id="welcome">
+        </div>
+    </section>
+    <br>
+    <section id="mission">
+        <div class="container">
+            <p id="missionStatement">This is where the mission statement should go. A brief 1-2 sentences describing the goal of this center.</p>
+
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="container">
+            <div class="info" id="info-1">
+                <div class="infoPic">
+                    <img src="images/planning.png" alt="Our Plan">
+                </div>
+                <div class="infoText">
+                    <p>This is the planning section, click to learn more</p>
+                </div>
+            </div>
+            <div class="info" id="info-2">
+                <div class="infoPic">
+                        <img src="images/about-us.jpg" alt="About Us">
+                </div>
+                <div class="infoText">
+                    <p>This is the about us section. Click to read more</p>
+                </div>
+            </div>
+            <div class="info" id="info-3">
+                <div class="infoPic">
+                    <img src="images/learn-more.png" alt="Learn More">
+                </div>
+                <div class="infoText">
+                    <p>This is the learn more section. Will contain history of our people.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
