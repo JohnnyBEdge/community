@@ -8,6 +8,43 @@
     <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <title>Utah Hazara Association</title>
+    <script language="javascript">
+            function CalculateOrder(form){
+             var radG1;
+             
+            for (var i = 0; i < document.myform.os0.length; i++){
+             if(document.myform.os0[i].checked==true){radG1=document.myform.os0[i].value;}
+            }
+            
+            
+            if(radG1 == "10.00")
+             {
+             document.myform.amount.value = '10.00';
+             document.myform.item_number.value = "WF-10-00";
+             }
+            else if(radG1 == "25.00")
+             {
+             document.myform.amount.value = '25.00';
+             document.myform.item_number.value = "WF-25-00";
+             }
+            else if(radG1 == "50.00")
+             {
+             document.myform.amount.value = '50.00';
+             document.myform.item_number.value = "WF-50-00";
+             }
+             else if(radG1 == "100.00")
+             {
+             document.myform.amount.value = '100.00';
+             document.myform.item_number.value = "WF-100-00";
+             }
+            else if(radG1 == "Other")
+             {
+             document.myform.amount.value = '0.00';
+             document.myform.item_number.value = "WF-0-00";
+             }     
+            }
+            // -->
+            </script>
 </head>
 <body>
     <header>
@@ -26,11 +63,12 @@
         </div>
     </header>
 <br>
-    <section id="welcomeImg">
-        <div class="container">
+    <div class="container">
+        <section id="welcomeImg">
             <img src="images/sample1.jpg" alt="" id="welcome">
-        </div>
-    </section>
+        </section>
+    </div>
+
     <br>
     <section id="mission">
         <div class="container">
@@ -67,11 +105,69 @@
             </div>
         </div>
     </section>
+
+    <section id="donateHere">
+        <div class="container">
+            <h3>Support Our Cause</h3>
+            <p>Did you know?</p>
+            <div id="benefitsList">
+                <ul>
+                    <li>Benefit of a community center</li>
+                    <li>Benefit of a community center</li>
+                    <li>Benefit of a community center</li>
+                    <li>Benefit of a community center</li>
+                </ul>
+            </div>    
+            <div>
+                <h3>Select an Amount:</h3>
+                <form id="donateForm" target="_self" action="https://www.sandbox.paypal.com/us/signin" method="post" name="myform">
+                    <input type="hidden" name="on0" value="Donation Amount"> 
+                    <input name="os0" id="test" class="btn btn-info" type="button" value="10.00 "> 
+                    <br>
+                    <input name="os0" class="btn btn-info active" type="button" value="25.00 "> 
+                    <br>
+                    <input name="os0" class="btn btn-info" type="button" value="50.00 "> 
+                    <br>
+                    <input name="os0" class="btn btn-info" type="button" value="100.00"> 
+                    <br>
+                    <input name="os0" class="btn btn-info" type="button" value="Other"> 
+                    Other - Please enter amount on the PayPal Screen
+                    
+                    <br><br>
+                    
+                    <input type="reset">
+                    <br><br><br>
+                    
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" onClick="CalculateOrder(this.form)" alt="Make payments with PayPal - it's fast, free and secure!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> 
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <!-- Replace "business" value with your PayPal Email Address or your Merchant Account ID -->
+                    <input type="hidden" name="business" value="PPdevBusiness@business.example.com">
+                    <input type="hidden" name="item_number">
+                    <input type="hidden" name="item_name" value="Donation Amount"> 
+                    <input type="hidden" name="amount"> 
+                    <input type="hidden" name="no_note" value="0">
+                    <input type="hidden" name="no_shipping" value="2">
+                    <input type="hidden" name="tax" value="0.00"> 
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="hidden" name="lc" value="US">
+                    <!-- Replace value with the web page you want the customer to return to after a successful transaction -->
+                    <input type="hidden" name="return" value="http://www.yourwebsite.com/ThankYou.html">
+                    <!-- Replace value with the web page you want the customer to return to after item cancellation -->
+                    <input type="hidden" name="cancel_return" value="http://www.yourwebsite.com/Cancel.html">
+                    <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
+                    </form> 
+            </div>    
+        </div>
+    </section>
+
+   
+
+        
     
-
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </body>
 </html>
