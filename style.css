@@ -9,48 +9,23 @@ body{
     background-image: url("https://www.transparenttextures.com/patterns/greyzz.png");
 }
 
-/* Global */
-.container{
-    width: 80%;
-    margin: 0 auto;
+#logo{
+    width:75px;
 }
 
-/* Header */
-header{
-    padding-top: 10px;
-    width: 100vw;
-    height: 15vh;
-    min-height: 12vh;
-    margin-bottom: 10px;
+.navbar-nav { 
+    flex-direction: row;
 }
-
-header ul{
-    list-style: none;
+.navbar-nav li{
+    margin-right: 15px;
 }
-header li{
-    display: inline;
-    float: left;
-    margin-right: 20px;
-}
-header a{
-    color: black;
+.navbar-nav a{
     text-decoration: none;
-    font-size: 25px;
-}
-header img{
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    float: left;
-}
-header nav{
-    float: right;
+    color: black;
 }
 
 /* Main homescreen image */
 #welcomeImg img{
-    width:75%;
-    border: solid rgb(233, 228, 228) 4px;
     box-shadow: 10px 10px 5px grey;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -64,7 +39,14 @@ header nav{
     margin: 0 auto;
 
 }
-.info{
+.card{
+    margin-right: 20px;
+}
+.card:hover{
+    transform: scale(1.1)
+}
+
+/* .info{
     border: solid none 1px;
     height: 300px;
     width: 250px;
@@ -87,15 +69,15 @@ header nav{
     transform: scale(1.1); 
 }
 
-/* Donate form */
+/* Donate form */ 
 #donateHere .container{
     background-color: rgb(233, 228, 228);
     margin-top: 50px;
-}
+} */
 form li{
     display: inline;
 }
 
-.active{
+.btn-success{
     transform: scale(1.2);
 }

@@ -43,31 +43,30 @@
              document.myform.item_number.value = "WF-0-00";
              }     
             }
-            // -->
             </script>
 </head>
 <body>
-    <header>
+    <nav class="navbar navrbar-default inline">
         <div class="container">
-            <div id="logo">
-                <img src="images/logo.png" alt="UHA Logo">
+            <div class="navbar-header">
+                <a href="#"><img id="logo" src="images/logo.png" alt="UHA Logo"></a>
             </div>
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="#">Our Plan</a></li>
-                    <li><a href="#">Who We Are</a></li>
-                    <li><a href="#">Learn More</a></li>
-                    <li><button class="btn btn-danger">Donate Now</button></li>
-                </ul>
-            </nav>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Our Plan</a></li>
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">Learn More</a></li>
+                <li><button class="btn btn-danger">Donate Now</button></li>
+            </ul>
         </div>
-    </header>
-<br>
-    <div class="container">
-        <section id="welcomeImg">
-            <img src="images/sample1.jpg" alt="" id="welcome">
-        </section>
-    </div>
+    </nav>
+    <br>
+    
+    <section id="welcomeImg">
+        <div class="container">
+            <img src="images/sample1.jpg" class="img-thumbnail" alt="" id="welcome">
+        </div>
+    </section>
+    
 
     <br>
     <section id="mission">
@@ -79,34 +78,124 @@
 
     <section id="content">
         <div class="container">
-            <div class="info" id="info-1">
-                <div class="infoPic">
-                    <img src="images/planning.png" alt="Our Plan">
-                </div>
-                <div class="infoText">
-                    <p>This is the planning section, click to learn more</p>
-                </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/planning.png" alt="Planning">
+                    <div class="card-body">
+                        <h5 class="card-title">Planning</h5>
+                        <p class="card-text">This is the planning section, click to learn more</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#planningModal">Learn More</a>
+                    </div>
             </div>
-            <div class="info" id="info-2">
-                <div class="infoPic">
-                        <img src="images/about-us.jpg" alt="About Us">
-                </div>
-                <div class="infoText">
-                    <p>This is the about us section. Click to read more</p>
-                </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/about-us.jpg" alt="About Us">
+                    <div class="card-body">
+                        <h5 class="card-title">About Us</h5>
+                        <p class="card-text">This is the about us section. Click to read more</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#aboutUsModal">Learn More</a>
+                    </div>
             </div>
-            <div class="info" id="info-3">
-                <div class="infoPic">
-                    <img src="images/learn-more.png" alt="Learn More">
-                </div>
-                <div class="infoText">
-                    <p>This is the learn more section. Will contain history of our people.</p>
-                </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/learn-more.png" alt="Learn More About Us">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn More</h5>
+                        <p class="card-text">This is the learn more section. Will contain history of our people.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#learnModal">Learn More</a>
+                    </div>
+            </div>
+            
+            <div class="modalContainer">
+                <div class="modal fade" id="planningModal" tabindex="-1" role="dialog" aria-labelledby="planningModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="planningModalLabel">Planning</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dignissimos, deleniti quia assumenda alias possimus aliquid officia suscipit corrupti magni quas aperiam rem autem ducimus! Voluptatum iste at velitLorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dignissimos, deleniti quia assumenda alias possimus aliquid officia suscipit corrupti magni quas aperiam rem autem ducimus! Voluptatum iste at velitLorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dignissimos, deleniti quia assumenda alias possimus aliquid officia suscipit corrupti magni quas aperiam rem autem ducimus! Voluptatum iste at velitLorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dignissimos, deleniti quia assumenda alias possimus aliquid officia suscipit corrupti magni quas aperiam rem autem ducimus! Voluptatum iste at velit
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="aboutUsModal" tabindex="-1" role="dialog" aria-labelledby="aboutUsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="aboutUsModalLabel">About Us</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dignissimos, deleniti quia assumenda alias possimus aliquid officia suscipit corrupti magni quas aperiam rem autem ducimus! Voluptatum iste at velitLorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dignissimos, deleniti quia assumenda alias possimus aliquid officia suscipit corrupti magni quas aperiam rem autem ducimus! Voluptatum iste at velitLorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dignissimos, deleniti quia assumenda alias possimus aliquid officia suscipit corrupti magni quas aperiam rem autem ducimus! Voluptatum iste at velitLorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dignissimos, deleniti quia assumenda alias possimus aliquid officia suscipit corrupti magni quas aperiam rem autem ducimus! Voluptatum iste at velit
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="learnModal" tabindex="-1" role="dialog" aria-labelledby="learnModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="learnModalLabel">Learn More</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dignissimos, deleniti quia assumenda alias possimus aliquid officia suscipit corrupti magni quas aperiam rem autem ducimus! Voluptatum iste at velitLorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dignissimos, deleniti quia assumenda alias possimus aliquid officia suscipit corrupti magni quas aperiam rem autem ducimus! Voluptatum iste at velitLorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dignissimos, deleniti quia assumenda alias possimus aliquid officia suscipit corrupti magni quas aperiam rem autem ducimus! Voluptatum iste at velitLorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dignissimos, deleniti quia assumenda alias possimus aliquid officia suscipit corrupti magni quas aperiam rem autem ducimus! Voluptatum iste at velit
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+            
+
             </div>
         </div>
     </section>
 
     <section id="donateHere">
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-3">Support Our Cause</h1>
+                <p class="lead">Some text here about how your donations will be great!</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
+            </div>
+        </div>
+        <!-- <div class="container">
+            <h3>Support Our Cause</h3>
+            <p>Did you know?</p>
+                <ul class="benefitsList">
+                    <li>Benefit of a community center</li>
+                    <li>Benefit of a community center</li>
+                    <li>Benefit of a community center</li>
+                    <li>Benefit of a community center</li>
+                </ul>   
+        </div> -->
+    </section>
+
+   <section id="donateHere">
         <div class="container">
             <h3>Support Our Cause</h3>
             <p>Did you know?</p>
@@ -121,22 +210,21 @@
             <div>
                 <h3>Select an Amount:</h3>
                 <form id="donateForm" target="_self" action="https://www.sandbox.paypal.com/us/signin" method="post" name="myform">
+
                     <input type="hidden" name="on0" value="Donation Amount"> 
-                    <input name="os0" id="test" class="btn btn-info" type="button" value="10.00 "> 
+                    <input name="os0" type="radio" value="10.00"> 10.00
                     <br>
-                    <input name="os0" class="btn btn-info active" type="button" value="25.00 "> 
+                    <input name="os0" type="radio" checked="" value="25.00"> 25.00
                     <br>
-                    <input name="os0" class="btn btn-info" type="button" value="50.00 "> 
+                    <input name="os0" type="radio" value="50.00"> 50.00
                     <br>
-                    <input name="os0" class="btn btn-info" type="button" value="100.00"> 
+                    <input name="os0" type="radio" value="100.00"> 100.00
                     <br>
-                    <input name="os0" class="btn btn-info" type="button" value="Other"> 
+                    <input name="os0" type="radio" value="Other"> 
                     Other - Please enter amount on the PayPal Screen
                     
                     <br><br>
                     
-                    <input type="reset">
-                    <br><br><br>
                     
                     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" onClick="CalculateOrder(this.form)" alt="Make payments with PayPal - it's fast, free and secure!">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> 
@@ -150,13 +238,13 @@
                     <input type="hidden" name="no_shipping" value="2">
                     <input type="hidden" name="tax" value="0.00"> 
                     <input type="hidden" name="currency_code" value="USD">
-                    <input type="hidden" name="lc" value="US">
+                    <input type="hidden" name="lc" value="US"> -->
                     <!-- Replace value with the web page you want the customer to return to after a successful transaction -->
-                    <input type="hidden" name="return" value="http://www.yourwebsite.com/ThankYou.html">
+                   <input type="hidden" name="return" value="http://www.yourwebsite.com/ThankYou.html"> -->
                     <!-- Replace value with the web page you want the customer to return to after item cancellation -->
                     <input type="hidden" name="cancel_return" value="http://www.yourwebsite.com/Cancel.html">
                     <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
-                    </form> 
+                    </form>
             </div>    
         </div>
     </section>
