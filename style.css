@@ -64,24 +64,76 @@ body{
     transform: scale(1.1)
 }
 
-/* Donate form */ 
-#donateHere .container{
+#donateHere{
+    width: 80%;
+    margin: 0 auto;
     background-color: rgb(233, 228, 228);
     margin-top: 50px;
-} */
+    box-shadow: 10px 10px 5px grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height:1000px;
+    }
+
+#donateHeader{
+    position: relative;
+}    
+#donateHeader img{
+    width: 100%;
+}
+#donateTitle{
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 300px;
+    transform: translate(-50%,-50%);
+    font-size: 4em;
+    font-family: 'Lilita One', cursive;
+}
+#thanks{
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+    font-style: italic;
+    font-family: serif;
+    color: grey;
+    padding: 10px;
+}
+#know{
+    text-align: left;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: serif;
+    color: black;
+    padding: 10px;
+}
+
+.benefitsList{
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+}
+
+
+/* Donate form */ 
+/* #donateHere .container{
+    background-color: rgb(233, 228, 228);
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.donateHeader img{
+    width: 100%;
+    padding: 0;
+}
+
 form li{
     display: inline;
-}
+} */
 
-.btn-success{
+/* .btn-success{
     transform: scale(1.2);
-}
+} */
 
-.jumbotron img{
-    width: 50%;
-    display: inline-block;
-}
-.jumbotron h1{
-    display: inline;
-
-}

@@ -1,9 +1,13 @@
-var donateForm = document.getElementById('donateForm');
-var btns = donateForm.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+// var checkbox = document.querySelector('input[name=os0]');
+
+
+
+// checkbox.addEventListener('change', function() {
+//   for(i=0; i<checkbox.length; i++){
+//     if(this.checked[i]) {
+//         alert('checked')
+//     } else {
+//         // Checkbox is not checked..
+//     }
+//   }
+// });
